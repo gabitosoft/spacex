@@ -9,6 +9,6 @@ package spacex.model;
  *
  * @author Gabriel Delgado
  */
-public interface SpaceObjectType {
-    
+public abstract class SpaceObjectType {
+    protected String name;
 }

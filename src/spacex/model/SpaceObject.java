@@ -5,16 +5,23 @@
  */
 package spacex.model;
 
+import javafx.scene.image.Image;
+
 /**
  *
  * @author Gabriel Delgado
  */
 public abstract class SpaceObject {
-    private int shield;
-    private int status;
-    private String name;
-    private SpaceObjectType type;
-    private String description;
+    protected int shield;
+    protected int status;
+    protected int posX;
+    protected int posY;
+    protected String name;
+    protected SpaceObjectType type;
+    protected String description;
+    protected Image image;
+    protected int height;
+    protected int width;
 
     public SpaceObject(int shield, int status, String name, SpaceObjectType type) {
         this.shield = shield;
@@ -30,6 +37,29 @@ public abstract class SpaceObject {
         this.type = type;
         this.description = description;
     }
+
+    public SpaceObject(int shield, int status, int posX, int posY, String name, SpaceObjectType type) {
+        this.shield = shield;
+        this.status = status;
+        this.posX = posX;
+        this.posY = posY;
+        this.name = name;
+        this.type = type;
+    }
+
+    public SpaceObject(int shield, int status, int posX, int posY, String name, SpaceObjectType type, String description, Image image, int height, int width) {
+        this.shield = shield;
+        this.status = status;
+        this.posX = posX;
+        this.posY = posY;
+        this.name = name;
+        this.type = type;
+        this.description = description;
+        this.image = image;
+        this.height = height;
+        this.width = width;
+    }
+    
     
     /**
      * @return the shield
@@ -99,6 +129,76 @@ public abstract class SpaceObject {
      */
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    /**
+     * @return the posX
+     */
+    public int getPosX() {
+        return posX;
+    }
+
+    /**
+     * @param posX the posX to set
+     */
+    public void setPosX(int posX) {
+        this.posX = posX;
+    }
+
+    /**
+     * @return the posY
+     */
+    public int getPosY() {
+        return posY;
+    }
+
+    /**
+     * @param posY the posY to set
+     */
+    public void setPosY(int posY) {
+        this.posY = posY;
+    }
+
+    /**
+     * @return the image
+     */
+    public Image getImage() {
+        return image;
+    }
+
+    /**
+     * @param image the image to set
+     */
+    public void setImage(Image image) {
+        this.image = image;
+    }
+
+    /**
+     * @return the height
+     */
+    public int getHeight() {
+        return height;
+    }
+
+    /**
+     * @param height the height to set
+     */
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    /**
+     * @return the width
+     */
+    public int getWidth() {
+        return width;
+    }
+
+    /**
+     * @param width the width to set
+     */
+    public void setWidth(int width) {
+        this.width = width;
     }
     
     

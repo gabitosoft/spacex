@@ -9,6 +9,10 @@ package spacex.model;
  *
  * @author Gabriel Delgado
  */
-public class Earth {
+public class Earth extends SpaceObject {
+
+    public Earth(int shield, int status, int posX, int posY, String name, SpaceObjectType type) {
+        super(shield, status, posX, posY, name, type);
+    }
     
 }
