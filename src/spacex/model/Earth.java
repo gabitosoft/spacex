@@ -5,6 +5,8 @@
  */
 package spacex.model;
 
+import javafx.scene.image.Image;
+
 /**
  *
  * @author Gabriel Delgado
@@ -14,5 +16,8 @@ public class Earth extends SpaceObject {
     public Earth(int shield, int status, int posX, int posY, String name, SpaceObjectType type) {
         super(shield, status, posX, posY, name, type);
     }
-    
+
+    public Earth(int shield, int status, int posX, int posY, String name, SpaceObjectType type, String description, Image image, int height, int width) {
+        super(shield, status, posX, posY, name, type, description, image, height, width);
+    }
 }
