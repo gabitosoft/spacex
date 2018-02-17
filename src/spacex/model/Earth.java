@@ -20,4 +20,14 @@ public class Earth extends SpaceObject {
     public Earth(int shield, int status, int posX, int posY, String name, SpaceObjectType type, String description, Image image, int height, int width) {
         super(shield, status, posX, posY, name, type, description, image, height, width);
     }
+    
+    @Override
+    public void move(int x, int y) {
+        //
+    }
+    
+    @Override
+    public void move(int offset) {
+        //
+    }
 }

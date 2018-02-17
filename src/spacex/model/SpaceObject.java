@@ -60,6 +60,8 @@ public abstract class SpaceObject {
         this.width = width;
     }
     
+    protected abstract void move(int x, int y);
+    protected abstract void move(int offset);
     
     /**
      * @return the shield
